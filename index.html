@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Card Challenge</title>
+</head>
+
+<body class="font-[SpaceGrotesk]">
+    <main>
+        <div class="container m-auto min-h-screen lg:flex lg:items-center lg:justify-between">
+            <div class="lg:w-[60rem]">
+                <div
+                    class="bg-[url('/images/bg-main-mobile.png')] lg:bg-[url('/images/bg-main-desktop.png')] bg-no-repeat bg-cover  flex flex-col justify-center items-center lg:w-3/5">
+                    <div class="flex flex-col justify-center w-96 lg:min-h-screen">
+                        <div
+                            class="bg-[url('/images/bg-card-back.png')] w-72 h-44 bg-no-repeat bg-contain self-end mt-10 mr-3
+                             text-white lg:bg-cover lg:bg-center lg:w-[25rem] lg:h-64 lg:mt-[22rem] lg:rounded-xl lg:-mr-64">
+                            <h1 class="mt-[4.2rem] ml-[14.2rem] text-sm lg:mt-[7.2rem] lg:ml-[21.7rem] cv">000</h1>
+                        </div>
+                        <div class="bg-[url('/images/bg-card-front.png')] text-white uppercase w-72 h-44 bg-no-repeat bg-contain 
+                    mt-32 ml-5 absolute flex flex-col p-5 gap-4 tracking-widest lg:justify-between
+                    lg:bg-cover lg:w-[25rem] lg:h-64 lg:-mt-60 lg:rounded-xl lg:ml-40">
+                            <img src="images/card-logo.svg" alt="card-logo" class="w-16">
+                            <h1 class="tracking-widest text-lg lg:text-2xl lg:pt-24 number">0000 0000 0000 0000</h1>
+                            <div class="flex justify-between">
+                                <h2 class="name text-xs lg:text-base">Jane Appleseed</h2>
+                                <h3 class="flex">
+                                    <p class="month text-xs lg:text-base">00</p>
+                                    <p class="text-xs lg:text-base">/</p>
+                                    <p class="year text-xs lg:text-base">00</p>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lg:ml-44 lg:p-2 lg:min-h-screen lg:flex lg:flex-col div-form">      
+                <form
+                    class="form h-[35rem] pt-32 pb-5 pl-6 pr-6 uppercase flex flex-col gap-2 text-[#21092f] m-auto w-80 lg:w-[28rem]"
+                    action="#" id="form">
+                    <div class="flex flex-col gap-2 h-28">
+                        <label for="name">Cardholder Name</label>
+                    <input name="name" id="name"
+                        class="border rounded-lg p-2 mb-3 focus:outline-none focus:border-[#21092f]"
+                        placeholder="e.g. Jane Appleseed">
+                    </div>
+                   
+                    <div class="flex flex-col gap-2 h-28">
+                        <label for="number">Card Number</label>
+                    <input name="number" id="number"
+                        class="border rounded-lg p-2 mb-3 focus:outline-none focus:border-[#21092f]"
+                        placeholder="e.g. 1234 5678 9123 0000">
+                    </div>
+                    <div class="flex gap-2 w-full flex-auto">
+                        <div class="flex flex-col gap-2 w-full h-28">
+                            <label for="month" class="w-20">Exp. Date</label>
+                            <input name="month" id="month"
+                                class="border rounded-lg p-2 mb-3 w-full focus:outline-none focus:border-[#21092f]"
+                                placeholder="MM">
+                                
+                        </div>
+                        <div class="flex flex-col gap-2 w-full h-28">
+                            <label for="year">[MM/YY]</label>
+                            <input name="year" id="year"
+                                class="border rounded-lg p-2 mb-3 w-full focus:outline-none focus:border-[#21092f]"
+                                placeholder="YY">
+                        </div>
+                        <div class="flex flex-col gap-2 w-full h-28">
+                            <label for="cv">CVC</label>
+                            <input name="cv" id="cv"
+                                class="border rounded-lg p-2 mb-3 w-full focus:outline-none focus:border-[#21092f] "
+                                placeholder="e.g. 123">
+                                
+                        </div>
+                    </div>
+                    <button
+                        class="bg-[#21092f]  text-white p-5 rounded-lg text-lg hover:bg-[#2a0c3b] active:translate-y-2" type="submit">Confirm</button>
+                </form>
+                <footer>
+                    <div class="text-center text-xs  w-80 m-auto mt-5">
+                        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                            class="text-[#8e8593]">Frontend Mentor</a>.
+                        Coded by <a href="https://github.com/DexterDC" class="text-[#8e8593]"
+                            target="_blank">DexterDC</a>.
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+<script src="js/app.js"></script>
+
+</html>
